@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avarege Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="diplom and hat">
+            <h1>Average Calculator</h1>
+        </header>
+        <form id="form_activity">
+            <input type="text" id="activity_name" required placeholder="Activity Name">
+            <input type="number" id="activity_note" required placeholder="Note" min="0" max="10">
+            <button type="submit">Send</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Activity Name</th>
+                    <th>Activity Note</th>
+                    <th>Approved?</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Final Average</td>
+                    <td id="final_average_note">---</td>
+                    <td id="final_average_result">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
