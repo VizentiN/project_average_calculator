@@ -48,7 +48,7 @@ function updateTable() {
 function updateAverage() {
     const finalAverage = calculateFinalAverage();
 
-    document.getElementById('final_average_note').innerHTML = finalAverage;
+    document.getElementById('final_average_note').innerHTML = finalAverage.toFixed(2);
     document.getElementById('final_average_result').innerHTML = finalAverage >= minNote ? spanApproved : spanDisapproved;
 }
 
